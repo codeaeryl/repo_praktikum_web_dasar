@@ -1,0 +1,28 @@
+div{
+    margin: auto;
+}
+.title-page{
+    padding: 10px;
+    background: #00A3A8;
+    color: white;
+}
+.container{
+    width: 1000px;
+}
+.content{
+    max-width: 1000px;
+}
+.title{
+    color:#00A3A8;
+    font-size:x-large;
+}
+.paragraph{
+    border-style: solid;
+    border-color: #00A3A8;
+    border-radius: 25px;
+    padding:10px;
+    font-size:large;
+}
+.list{
+    margin-left:100px;
+}

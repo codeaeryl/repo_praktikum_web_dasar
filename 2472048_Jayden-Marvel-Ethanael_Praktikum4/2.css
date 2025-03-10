@@ -1,0 +1,49 @@
+.background{
+    background-image: url(./img/bg_sertif.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.content{
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+.font{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tigalima{
+    font-size: 35px;
+}
+.enampuluh{
+    font-size: 60px;
+}
+.tigapuluh{
+    font-size: 30px;
+}
+.dualima{
+    font-size: 25px;
+}
+.limalima{
+    font-size: 55px;
+}
+.black{
+    color:black;
+}
+.biru{
+    color:#2d456e;
+}
+.abu{
+    color:#3f4650;
+}
+.coklat{
+    color:#951f1d;
+}
+.spacing{
+    letter-spacing: 2px;
+}
+.width1{
+    width: 1300px;
+}
+.width2{
+    width: 450px;
+}
