@@ -1,0 +1,24 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin:auto;
+    align-content: center;
+    text-align: center;
+}
+.row div{
+    display: inline-block;
+    font-size: 20px;
+    padding: 35px;
+    margin:0;
+    border: solid 1px black;
+}
+.black{
+    background-color: black;
+    color:white;
+}
+.white{
+    background-color: white;
+    color:black;
+}
+.invisible{
+    color: rgb(0,0,0,0)
+}
