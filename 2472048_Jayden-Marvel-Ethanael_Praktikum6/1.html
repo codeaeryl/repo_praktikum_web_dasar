@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+            <div class="login">
+                <img src="img/login.jpg" alt="Login Illustration">
+            </div>
+            <div class="login-content">
+                <h1>Welcome Back!</h1>
+                <p>Log in to your account to continue exploring our services.</p>
+                <!--Kalo dikasih method="post" jadi error kalo disubmit, gtw cara lain untuk ngehide data sensitifnya-->
+                <form action="#">
+                    <label for="email">
+                        Email
+                    </label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="e.g. johndoe@gmail.com" required>
+                    <br>
+                    <label for="pass">
+                        Password
+                    </label>
+                    <br>
+                    <input type="password" name="pass" id="pass" spellcheck="false" placeholder="Enter your password" required>
+                    <div class="form-options">
+                        <p><a href="#">Forgot Password?</a></p>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+
+                <div class="social-login">
+                    <p>Or log in with</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/google.png" alt="Google Login"></a>
+                        <a href="#"><img src="img/facebook.png" alt="Facebook Login"></a>
+                        <a href="#"><img src="img/twitter.png" alt="Twitter Login"></a>
+                    </div>
+                </div>
+
+                <p class="signup-link">Don't have an account? 
+                    <a href="#">Sign up</a>
+                </p>
+            </div>
+    </div>
+</body>
+</html>
