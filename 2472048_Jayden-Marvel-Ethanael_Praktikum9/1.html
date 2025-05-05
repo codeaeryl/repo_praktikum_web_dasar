@@ -1,0 +1,49 @@
+<!-- 2472048 - Jayden Marvel Ethanael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persegi Buatanmu</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-self: center;
+            justify-items: center;
+        }
+        #one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Persegi Buatanmu</h3>
+        <div id="one"></div>
+        <div>&copy; 2472048 - Jayden Marvel Ethanael</div>
+    </div>
+    <script>
+        let a = prompt("Border persegi (misal: 1):");
+        let b = prompt("Tinggi persegi (px):");
+        let c = prompt("Lebar persegi (px):");
+        let d = prompt("Warna persegi (misal: red, blue, #00ff00):");
+        let e = prompt("isi persegi (misal: Hello World)");
+        f = document.getElementById("one");
+        if (a==1) {
+            f.style.border="2px solid black";
+        }
+        f.style.height = b+"px";
+        f.style.width = c+"px";
+        f.style.backgroundColor = d;
+        f.innerHTML = e;
+    </script>
+</body>
+</html>

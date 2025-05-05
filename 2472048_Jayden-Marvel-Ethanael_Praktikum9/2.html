@@ -1,0 +1,78 @@
+<!-- 2472048 - Jayden Marvel Ethanael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epilepsy Warning</title>
+    <style>
+        body, html {
+            height: 100vh;
+            margin:0;
+            padding:0;
+            display: grid;
+            align-items: center;
+            align-content: center;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        .container {
+            border: 2px solid black;
+            border-radius: 4px;
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            justify-self: center;
+            background-color: white;
+        }
+        button {
+            padding:10px; 
+            border-radius: 5px; 
+            width:150px; 
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body id="bg">
+    <div class="container">
+        <h2 style="line-height: 0;">Color Generator</h2>
+        <button onclick="randomColor()">Generate</button>
+        <h4 id="text" style="text-align: center; display:none; line-height: 0;"></h4>
+        <script>
+            function randomColor() {
+                var hex = "#";
+                for (let i = 0; i<6 ; i++) {
+                    var n = Math.floor(Math.random()*16);
+                    if (n == 10) {
+                        n = "A"
+                    }
+                    if (n == 11) {
+                        n = "B"
+                    }
+                    if (n == 12) {
+                        n = "C"
+                    }
+                    if (n == 13) {
+                        n = "D"
+                    }
+                    if (n == 14) {
+                        n = "E"
+                    }
+                    if (n == 15) {
+                        n = "F"
+                    }
+                    hex = hex + n
+                };
+                a = document.getElementById("bg");
+                a.style.backgroundColor = hex;
+                b = document.getElementById("text");
+                b.innerHTML = hex;
+                b.style.display = "block";
+            }
+        </script>
+    </div>
+</body>
+</html>

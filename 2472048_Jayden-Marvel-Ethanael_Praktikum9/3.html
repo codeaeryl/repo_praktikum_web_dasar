@@ -1,0 +1,62 @@
+<!-- 2472048 - Jayden Marvel Ethanael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <style>
+        body, html {
+            display: grid;
+            height: 100vh;
+            margin:0;
+            padding:0;
+            align-items: center;
+            align-content: center;
+            box-sizing: border-box;
+            background-color: #e3f2fd;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .quiz-container {
+            border: 0;
+            border-radius: 15px;
+            display: flex;
+            padding: 30px 50px;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            justify-self: center;
+            background-color: white;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+        button {
+            padding:10px; 
+            border-radius: 5px; 
+            width:150px;
+            background-color: #3498db;
+            color: white;
+            border:0;
+            margin: 0 auto;
+        }
+        button:hover{
+            background-color: #2980b9;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <div style="font-size: 1.5em; font-weight: bold; margin-bottom: 0.5em;">Welcome to the Math Quiz!</div>
+        <div style="font-size: 0.8em; margin-bottom: 0.5em;">
+            Click the button to start solving random math problems. Type 
+            <br> "exit" or press cancel to stop.
+        </div>
+        <button onclick="startQuiz()">Start Practicing</button>
+        <div id="result" style="display: none; margin: 0.5em 0;"></div>
+        <div id="datetime" style="display: none;"></div>
+    </div>
+</body>
+</html>
