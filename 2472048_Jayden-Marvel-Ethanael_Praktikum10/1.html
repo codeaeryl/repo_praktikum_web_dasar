@@ -1,0 +1,63 @@
+<!-- 2472048 - Jayden Marvel Ethanael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToDoList</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #F5F5F5;
+            color: white;
+            display:grid;
+            justify-content: center ;
+        }
+        .container{
+            background-color: #4A90E2;
+            width: 400px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .h2{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        button{
+            background-color: #50C878;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            border:0;
+        }
+        footer{
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <script src="1.js"></script>
+    <div class="container">
+        <header>
+            <div class="h2">My To-Do List</div>
+            <div>
+                <button onclick="addList()">Tambah +</button>
+            </div>
+        </header>
+        <main>
+            <ul id="list"></ul>
+        </main>
+        <footer>&copy; 2472048 - Jayden Marvel Ethanael</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!-- 2472048 - Jayden Marvel Ethanael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <style>
+        body,html{
+            margin: 0 !important;
+            padding: 0 !important;
+            box-sizing: border-box !important;
+        }
+        body{
+            background-color: lightblue !important;
+            font-family: Arial, Helvetica, sans-serif !important;
+            display: grid;
+            height: 100vh;
+        }
+        .container {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+        .left, .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #lives {
+            font-weight: bold;
+            text-align: center;
+        }
+        #ans {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 10px;
+            text-align: center;
+
+        }
+        #answer {
+            width: 1em;
+        }
+        #button {
+            padding:0;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <img src="img/10.jpg" alt="" id="img">
+            </div>
+            <div id="lives"></div>
+        </div>
+        <div class="right center-div">
+            <div id="ans"></div>
+            <p id="clues"></p>
+            <div>
+                <div id="input">
+                    <input type="text" id="answer">
+                    <button onclick="checkAnswer()" id="button">Check</button>
+                </div>
+                <div id="result">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="3.js"></script>
+</body>
+</html>
