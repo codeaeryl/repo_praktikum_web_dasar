@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         html, body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #f4f4f4 60%, #e0e7ff 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+            background-image: url('img/cinema.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 350px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header span{
+            color: white;
+        }
+        #center-header {
+            margin-top: 20%;
+            margin-bottom:20%;
+            font-size: 3em;
+            color:white;
+            font-weight: bold;
+
+        }
+        #bottom-header {
+            align-self: flex-end;
+            font-size: 1.5em;
+            color: yellow;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+        button{
+            padding: 10px;
+            background-color: #1b9c85;
+            border: 0;
+            border-radius: 10px;
+
+            text-align: center;
+            font-size: 1em;
+            color: white;
+            font-weight: bold;
+        }
+        .card{
+            background-color: #fffaf3;
+            border: 2px solid #d8cfc4;
+            border-radius: 15px;
+            padding: 20px;
+            width:200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            height: 450px;
+            margin:20px;
+        }
+        .card p {
+            color: #1b9c85;
+            font-weight: bold;
+        }
+        img {
+            width: 200px;
+            border-radius: 15px;
+        }
+        footer {
+            border-bottom: 0;
+            border-top: 10px;
+            border-left: 10px;
+            border-right: 10px;
+            border-radius: 30px 30px 0 0;
+            width: 100vw;
+
+            background-color: black;
+            color: white;
+            text-align: center;
+
+            position: fixed;
+            bottom: 0;
+        }
+        footer div{
+            padding: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="center-header">Cinema 25</div>
+            <div id="bottom-header">Now Showing</div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="button">
+            <button onclick="showFilm()">See Movies</button>
+        </div>
+        <script src="2.js"></script>
+    </div>
+    <footer>
+        <div>&copy; 2025 - Cinema - 2472048 Jayden Marvel Ethanael</div>
+    </footer>
+</body>
+</html>
